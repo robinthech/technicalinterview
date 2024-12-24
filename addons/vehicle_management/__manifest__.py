@@ -14,6 +14,7 @@
         "security/ir.model.access.csv",
 
         "views/my_company_vehicle_views.xml",
+        "views/res_partner_views.xml",
     ],
     'demo': [],
     'installable': True,

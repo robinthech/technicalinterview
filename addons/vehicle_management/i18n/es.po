@@ -1,0 +1,134 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 17.0+e-20240216\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-24 19:39+0000\n"
+"PO-Revision-Date: 2024-12-24 19:39+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: vehicle_management
+#. odoo-python
+#: code:addons/vehicle_management/models/my_company_vehicle.py:0
+#, python-format
+msgid "A vehicle with this license plate already exists."
+msgstr "Ya existe un vehículo con esta matrícula."
+
+#. module: vehicle_management
+#: model:ir.model,name:vehicle_management.model_res_partner
+#: model:ir.model.fields,field_description:vehicle_management.field_my_company_vehicle__partner_id
+msgid "Contact"
+msgstr "Contacto"
+
+#. module: vehicle_management
+#: model:ir.model.fields,field_description:vehicle_management.field_my_company_vehicle__create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: vehicle_management
+#: model:ir.model.fields,field_description:vehicle_management.field_my_company_vehicle__create_date
+msgid "Created on"
+msgstr "Creado en"
+
+#. module: vehicle_management
+#: model:ir.model.fields.selection,name:vehicle_management.selection__my_company_vehicle__fuel_type__diesel
+msgid "Diesel"
+msgstr "Diésel"
+
+#. module: vehicle_management
+#: model:ir.model.fields,field_description:vehicle_management.field_my_company_vehicle__display_name
+msgid "Display Name"
+msgstr "Nombre para mostrar"
+
+#. module: vehicle_management
+#: model:ir.model.fields.selection,name:vehicle_management.selection__my_company_vehicle__fuel_type__electric
+msgid "Electric"
+msgstr "Eléctrico"
+
+#. module: vehicle_management
+#: model:ir.ui.menu,name:vehicle_management.menu_fleet_management
+msgid "Fleet Management"
+msgstr "Gestión de Flota"
+
+#. module: vehicle_management
+#: model:ir.model.fields,field_description:vehicle_management.field_my_company_vehicle__fuel_type
+msgid "Fuel Type"
+msgstr "Tipo de Combustible"
+
+#. module: vehicle_management
+#: model:ir.model.fields,field_description:vehicle_management.field_my_company_vehicle__id
+msgid "ID"
+msgstr "ID"
+
+#. module: vehicle_management
+#: model:ir.model.fields,field_description:vehicle_management.field_my_company_vehicle__last_service_date
+msgid "Last Service Date"
+msgstr "Última Fecha de Servicio"
+
+#. module: vehicle_management
+#: model:ir.model.fields,field_description:vehicle_management.field_my_company_vehicle__write_uid
+msgid "Last Updated by"
+msgstr "Última Actualización por"
+
+#. module: vehicle_management
+#: model:ir.model.fields,field_description:vehicle_management.field_my_company_vehicle__write_date
+msgid "Last Updated on"
+msgstr "Última Actualización en"
+
+#. module: vehicle_management
+#: model:ir.model.fields,field_description:vehicle_management.field_my_company_vehicle__license_plate
+msgid "License Plate"
+msgstr "Matrícula"
+
+#. module: vehicle_management
+#: model:ir.model.fields,field_description:vehicle_management.field_my_company_vehicle__mileage
+msgid "Mileage"
+msgstr "Kilometraje"
+
+#. module: vehicle_management
+#: model:ir.model.fields,field_description:vehicle_management.field_my_company_vehicle__name
+msgid "Name"
+msgstr "Nombre"
+
+#. module: vehicle_management
+#: model:ir.model.fields,field_description:vehicle_management.field_my_company_vehicle__needs_service
+msgid "Needs Service"
+msgstr "Requiere Servicio"
+
+#. module: vehicle_management
+#: model_terms:ir.ui.view,arch_db:vehicle_management.view_form_my_company_vehicle
+msgid "Schedule Service"
+msgstr "Programar Servicio"
+
+#. module: vehicle_management
+#: model:ir.model.fields,field_description:vehicle_management.field_res_partner__vehicle_count
+#: model:ir.model.fields,field_description:vehicle_management.field_res_users__vehicle_count
+msgid "Vehicle Count"
+msgstr "Cantidad de Vehículos"
+
+#. module: vehicle_management
+#: model:res.groups,name:vehicle_management.vehicle_manager
+msgid "Vehicle Manager"
+msgstr "Gestor de Vehículos"
+
+#. module: vehicle_management
+#: model:ir.actions.act_window,name:vehicle_management.action_vehicles
+#: model:ir.model.fields,field_description:vehicle_management.field_res_partner__vehicle_ids
+#: model:ir.model.fields,field_description:vehicle_management.field_res_users__vehicle_ids
+#: model:ir.ui.menu,name:vehicle_management.menu_vehicles
+msgid "Vehicles"
+msgstr "Vehículos"
+
+#. module: vehicle_management
+#: model:ir.model.fields.selection,name:vehicle_management.selection__my_company_vehicle__fuel_type__gasoline,
+msgid "gasoline,"
+msgstr "gasolina,"
+
+#. module: vehicle_management
+#: model:ir.model,name:vehicle_management.model_my_company_vehicle
+msgid "my.company.vehicle"
+msgstr "mi.empresa.vehículo"
