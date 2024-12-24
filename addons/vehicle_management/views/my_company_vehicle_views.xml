@@ -1,0 +1,90 @@
+<odoo>
+
+    <record id="view_kanban_my_company_vehicle" model="ir.ui.view">
+        <field name="name">my.company.vehicle.kanban</field>
+        <field name="model">my.company.vehicle</field>
+        <field name="arch" type="xml">
+            <kanban>
+                <field name="name"/>
+                <field name="license_plate"/>
+                <field name="needs_service"/>
+                <templates>
+                    <t t-name="kanban-box">
+                        <div class="oe_kanban_global_click">
+                            <field name="name"/>
+                            <field name="license_plate"/>
+                            <field name="needs_service"/>
+                        </div>
+                    </t>
+                </templates>
+            </kanban>
+        </field>
+    </record>
+
+    <record id="view_form_my_company_vehicle" model="ir.ui.view">
+        <field name="name">my.company.vehicle.form</field>
+        <field name="model">my.company.vehicle</field>
+        <field name="arch" type="xml">
+            <form>
+                <header>
+                    <button name="action_shedule_service" string="Schedule Service" type="object" class="oe_highlight"/>
+                </header>
+                <sheet>
+                    <group>
+                        <group>
+                            <field name="name"/>
+                            <field name="license_plate"/>
+                            <field name="fuel_type"/>
+                            <field name="partner_id"/>
+                        </group>
+                        <group>
+                            <field name="mileage"/>
+                            <field name="last_service_date"/>
+                            <field name="needs_service"/>
+                        </group>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="view_tree_my_company_vehicle" model="ir.ui.view">
+        <field name="name">my.company.vehicle.tree</field>
+        <field name="model">my.company.vehicle</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="license_plate"/>
+                <field name="needs_service"/>
+                <field name="mileage" optional="hide"/>
+                <field name="last_service_date" optional="hide"/>
+                <field name="partner_id" optional="hide"/>
+                <field name="fuel_type" optional="hide"/>
+            </tree>
+        </field>
+    </record>
+
+    <record id="view_search_my_company_vehicle" model="ir.ui.view">
+        <field name="name">my.company.vehicle.search</field>
+        <field name="model">my.company.vehicle</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="name"/>
+                <field name="license_plate"/>
+                <field name="partner_id"/>
+                <field name="last_service_date"/>
+            </search>
+        </field>
+    </record>
+
+    <record id="action_vehicles" model="ir.actions.act_window">
+        <field name="name">Vehicles</field>
+        <field name="res_model">my.company.vehicle</field>
+        <field name="view_mode">tree,form,kanban</field>
+    </record>
+
+    <menuitem id="menu_fleet_management" name="Fleet Management" sequence="1"/>
+    <menuitem id="menu_vehicles" name="Vehicles" parent="menu_fleet_management" action="action_vehicles" groups="vehicle_management.vehicle_manager"/>
+
+
+</odoo>
